@@ -44,9 +44,9 @@ height: 1080px;
   
    .ob-JE-ctives {
     position: absolute;
-    top: 8px;
-    left: 15px;
-    font-family: "Lato-SemiBold", Helvetica;
+    top: 11px;
+    left: 16px;
+    font-family: "Lato", sans-serif; 
     font-weight: 600;
     color: #000000;
     font-size: 18px;
@@ -54,6 +54,7 @@ height: 1080px;
     letter-spacing: -0.2px;
     line-height: 21.6px;
     white-space: nowrap;
+    z-index: 2;
   }
   
  .rectangle {
@@ -76,9 +77,9 @@ height: 1080px;
   
   .slide .data-analysis {
     position: absolute;
-    top: 8px;
-    left: 14px;
-    font-family: "Lato-SemiBold", Helvetica;
+    top: 11px;
+    left: -27px;
+    font-family: "Lato", sans-serif; 
     font-weight: 600;
     color: #000000;
     font-size: 18px;
@@ -89,11 +90,11 @@ height: 1080px;
   }
   
  .rectangle-2 {
-    width: 157px;
+    width: 180px;
     position: absolute;
     height: 40px;
     top: 0;
-    left: 0;
+    left: -40px;
     border: 2px solid;
     border-color: #000000;
   }
@@ -102,7 +103,7 @@ height: 1080px;
     position: absolute;
     top: 34px;
     left: 108px;
-    font-family: "Lato-SemiBold", Helvetica;
+    font-family: "Lato", sans-serif; 
     font-weight: 600;
     color: #000000;
     font-size: 40px;
@@ -144,7 +145,7 @@ height: 1080px;
         box-shadow: 0px 0px 50px #00000033;
       
         /* .how-are-they 클래스의 스타일 */
-        font-family: "Lato-Bold", Helvetica;
+        font-family: "Lato", sans-serif; 
         font-weight: 700;
         color: #ffffff;
         font-size: 40px;
@@ -160,7 +161,7 @@ height: 1080px;
     position: absolute;
     top: 47px;
     left: 56px;
-    font-family: "Lato-Bold", Helvetica;
+    font-family: "Lato", sans-serif; 
     font-weight: 700;
     color: #ffffff;
     font-size: 40px;
@@ -194,3 +195,113 @@ height: 1080px;
 
 .btn { font-family: Arial, sans-serif;
     text-align: center;}
+
+
+
+
+/* 모달 스타일 */
+.modal {
+    display: none; /* 기본적으로 숨김 */
+    position: fixed; /* 고정 위치 */
+    z-index: 10; /* 다른 요소 위에 위치 */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* 스크롤이 필요한 경우 스크롤바 표시 */
+    background-color: rgba(0,0,0,0.5); /* 반투명 배경 */
+  }
+  
+  /* 모달 내용 스타일 */
+  .modal-content {
+    position:relative;
+    width:1034px;
+    height:622px;
+    background-color: #ffffff;
+    border-radius:30px;
+    margin: 15% auto; /* 창 가운데 정렬 */
+    padding: 20px;
+    box-shadow: var(---111);
+    
+  }
+  
+  /* 닫기 버튼 스타일 */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #mic{ 
+  position:absolute;
+    top: 926px;
+    left:61px;
+  
+  }
+  #mic path:hover {
+    fill: blue;
+  }
+  
+  .rectangle1{
+    position:absolute;
+    top:447px;
+    left:457px;
+    width:120px;
+    height:120px;
+  background-color:#1078fd;
+    border-radius:1000px;
+    box-shadow: 0px 9px 50px #00000033;
+  
+  }
+  
+  .then{
+   
+    color: #000;
+  text-align: center;
+  font-family: Lato;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 50.4px */
+  letter-spacing: -0.462px;
+  text-transform: uppercase;}
+  
+  .now{
+    width: 703px;
+   position:absolute;
+    left:163px;
+    color: #000;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+    letter-spacing: -0.352px;}
+  
+  .the{
+     position:absolute;
+    top:270px;
+    left:163px;
+    color: #000;
+  font-family: Lato;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+    letter-spacing: -0.352px;}
+  
+  .mic1{
+    width: 47px;
+  height: 58px;
+  flex-shrink: 0;
+    position:absolute;
+    top:478px;
+  left:493px;}
